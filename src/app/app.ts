@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CarouselModule } from 'primeng/carousel';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CarouselModule],
+  imports: [RouterOutlet, CarouselModule, AnimateOnScrollModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

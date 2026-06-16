@@ -1,7 +1,8 @@
-import { Component, HostListener, signal } from '@angular/core';
+import { Component, ElementRef, HostListener, signal, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CarouselModule } from 'primeng/carousel';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { CountUp } from 'countup.js';
 
 @Component({
   selector: 'app-root',
@@ -57,6 +58,9 @@ export class App {
       behavior: 'smooth',
     });
   }
+
+
+
 
 
 }

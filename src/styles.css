@@ -3,4 +3,6 @@
 @import 'tailwindcss';
 @plugin "tailwindcss-primeui";
 
-
+html {
+    scroll-behavior: smooth;
+}

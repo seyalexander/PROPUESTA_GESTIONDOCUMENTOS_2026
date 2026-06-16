@@ -1172,4 +1172,16 @@
 
 </section>
 
+
+@if(showScrollTop){
+    <button (click)="scrollToTop()"
+  class="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center
+         bg-slate-950 hover:bg-slate-700 rounded-full shadow-2xl
+         transition-all duration-300 hover:scale-110 text-white">
+↑
+</button>
+}
+
+
+
 <router-outlet />

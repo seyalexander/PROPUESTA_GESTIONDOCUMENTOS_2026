@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CarouselModule } from 'primeng/carousel';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
@@ -43,4 +43,20 @@ export class App {
     // }
 
   ];
+
+  showScrollTop = false;
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    this.showScrollTop = window.scrollY > 300;
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
+
 }
